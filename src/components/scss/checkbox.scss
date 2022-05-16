@@ -1,0 +1,42 @@
+.main {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  & p {
+    margin-top: 1.5px;
+    font-size: 8.5px;
+    font-weight: 600;
+    @media screen and (max-width: 620px) {
+      font-size: 5px;
+    }
+  }
+}
+.main__input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.main__checkbox {
+  display: inline-block;
+  font-size: 10px;
+  height: 14px;
+  width: 14px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin-right: 5px;
+  cursor: pointer;
+  @media screen and (max-width: 620px) {
+      height: 8px;
+      width: 8px;
+
+}
+}
+
+.main__checkbox--active {
+  border: 1.5px solid #1c9cd9;
+  background-color: white;
+}
